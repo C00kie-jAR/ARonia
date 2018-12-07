@@ -4,8 +4,8 @@ function Aronia(){
 
 }
 
-Aronia.prototype.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'Aronia', 'coolMethod', [arg0]);
+Aronia.prototype.openArActivity = function (arg0, success, error) {
+    exec(success, error, 'Aronia', 'openArActivity', [arg0]);
 };
 
 module.exports =  new Aronia();
