@@ -2,7 +2,7 @@
 <plugin id="cordova-plugin-aronia" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Aronia</name>
     <js-module name="Aronia" src="www/Aronia.js">
-        <clobbers target="cordova.plugins.Aronia" />
+        <clobbers target="Aronia" />
     </js-module>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
