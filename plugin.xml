@@ -4,21 +4,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Aronia</name>
     <js-module name="Aronia" src="www/Aronia.js">
-        <clobbers target="cordova.plugins.Aronia" />
+        <clobbers target="Aronia" />
     </js-module>
     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+        </config-file>
         <config-file parent="/*" target="config.xml">
             <feature name="Aronia">
                 <param name="ios-package" value="Aronia" />
             </feature>
         </config-file>
-        <source-file src="src/ios/Aronia.m" />
+        <header-file src="src/ios/BridgeHeader.h" />
+        <source-file src="src/ios/Aronia.swift" />
     </platform>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Aronia">
                 <param name="android-package" value="cordova-plugin-aronia.Aronia" />
             </feature>
+            <uses-permission android:name="android.permission.CAMERA"/>
         </config-file>
           <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
