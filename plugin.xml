@@ -13,7 +13,7 @@
                 <param name="ios-package" value="Aronia" />
             </feature>
         </config-file>
-        <header-file src="src/ios/bridgeHeader.h" />
+        <header-file src="src/ios/BridgeHeader.h" />
         <source-file src="src/ios/Aronia.swift" />
     </platform>
     <platform name="android">
