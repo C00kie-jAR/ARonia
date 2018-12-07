@@ -41,9 +41,11 @@
             <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
             <uses-feature android:name="android.hardware.sensor.compass" android:required="true" />   
             <meta-data android:name="com.google.ar.core" android:value="optional" />
-            <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />  
-             <meta-data android:name="android.support.multidex.MultiDexApplication" />        
+            <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />     
         </config-file>
+        <application>
+            <meta-data android:name="android.support.multidex.MultiDexApplication" />     
+        </application>
         <source-file src="src/android/Aronia.java" target-dir="src/cordova-plugin-aronia/Aronia" />
         <source-file src="src/android/AroniaActivity.java" target-dir="src/cordova-plugin-aronia/Aronia" />
     </platform>
