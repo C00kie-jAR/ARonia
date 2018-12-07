@@ -1,0 +1,41 @@
+{
+  "name": "cordova-plugin-aronia",
+  "version": "0.0.1",
+  "description": "Cordova plugin implementing ARCore and Sceneform to enable easy interface for using Augmented reality in Cordova application ",
+  "cordova": {
+    "id": "cordova-plugin-aronia",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Cookie jAR",
+  "contributors": [
+    {
+      "name": "Ana Milovanovic",
+      "email": "a.milovanovic@levi9.com"
+    },
+    {
+      "name": "Sofija Bojic",
+      "email": "s.bojic@levi9.com"
+    },
+    {
+      "name": "Svetozar Pavlovic",
+      "email": "s.pavlovic@levi9.com"
+    },
+    {
+      "name": "Vladimir Radojkovic",
+      "email": "v.radojkovic@levi9.com"
+    },
+    {
+      "name": "Vuk Stankovic",
+      "email": "v.stankovic@levi9.com"
+    }
+  ],
+  "license": "MIT"
+}
