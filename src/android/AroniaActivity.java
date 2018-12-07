@@ -11,9 +11,10 @@ public class AroniaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String package_name = getApplication().getPackageName();
         setContentView(getApplication().getResources().getIdentifier("activity_new", "layout", package_name));
         fragment = (ArFragment)
-                getSupportFragmentManager().findFragmentById("sceneform_fragment");
+                getSupportFragmentManager().findFragmentById(getApplication().getResources().getIdentifier("activity_new", "id", package_name));
 
     }
 }

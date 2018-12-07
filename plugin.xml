@@ -19,13 +19,13 @@
         <source-file src="src/ios/Aronia.swift" />
     </platform>
     <platform name="android">
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Aronia">
                 <param name="android-package" value="cordova-plugin-aronia.Aronia" />
             </feature>
-            <uses-permission android:name="android.permission.CAMERA"/>
         </config-file>
-          <config-file target="AndroidManifest.xml" parent="/manifest">
+          <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -39,12 +39,11 @@
             <uses-feature android:name="android.hardware.camera" android:required="true" />
             <uses-feature android:name="android.hardware.location" android:required="true" />
             <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
-            <uses-feature android:name="android.hardware.sensor.compass" android:required="true" />
+            <uses-feature android:name="android.hardware.sensor.compass" android:required="true" />   
             <meta-data android:name="com.google.ar.core" android:value="optional" />
-            <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />
-            
+            <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />  
+             <meta-data android:name="android.support.multidex.MultiDexApplication" />        
         </config-file>
-        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
         <source-file src="src/android/Aronia.java" target-dir="src/cordova-plugin-aronia/Aronia" />
         <source-file src="src/android/AroniaActivity.java" target-dir="src/cordova-plugin-aronia/Aronia" />
     </platform>
