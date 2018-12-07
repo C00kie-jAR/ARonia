@@ -25,7 +25,7 @@
                 <param name="android-package" value="cordova-plugin-aronia.Aronia" />
             </feature>
         </config-file>
-          <config-file target="AndroidManifest.xml" parent="/*">
+        <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -42,7 +42,10 @@
             <uses-feature android:name="android.hardware.sensor.compass" android:required="true" />   
             <meta-data android:name="com.google.ar.core" android:value="optional" />
             <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />
-            <activity android:label="Aronia Activity" android:name=".AroniaActivity"></activity>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name=".AroniaActivity" android:label="Aronia Activity">
+            </activity>
         </config-file>
         <application>
             <meta-data android:name="android.support.multidex.MultiDexApplication" />     
