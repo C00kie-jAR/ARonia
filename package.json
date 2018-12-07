@@ -9,6 +9,7 @@
       "android"
     ]
   },
+  "repository": "https://github.com/C00kie-jAR/ARonia",
   "keywords": [
     "ecosystem:cordova",
     "cordova-ios",
