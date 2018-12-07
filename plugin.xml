@@ -5,16 +5,23 @@
         <clobbers target="Aronia" />
     </js-module>
     <platform name="ios">
-        <config-file parent="/*" target="config.xml">
-            <feature name="Aronia"><param name="ios-package" value="Aronia" /></feature>
+        <config-file target="config.xml" parent="/*">
+
         </config-file>
-        <source-file src="src/ios/Aronia.m" />
+        <config-file parent="/*" target="config.xml">
+            <feature name="Aronia">
+                <param name="ios-package" value="Aronia" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/bridgeHeader.h" />
+        <source-file src="src/ios/Aronia.swift" />
     </platform>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Aronia">
                 <param name="android-package" value="cordova-plugin-aronia.Aronia" />
             </feature>
+            <uses-permission android:name="android.permission.CAMERA"/>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Aronia.java" target-dir="src/cordova-plugin-aronia/Aronia" />
