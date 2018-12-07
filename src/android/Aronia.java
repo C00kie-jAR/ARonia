@@ -25,7 +25,8 @@ public class Aronia extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("openArActivity")) {
             String message = args.getString(0);
-            this.openArActivity(message, callbackContext);
+            Context context = cordova.getActivity().getApplicationContext();
+            this.openArActivity(context);
             return true;
         }
         return false;
