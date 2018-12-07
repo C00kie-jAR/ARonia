@@ -1,0 +1,11 @@
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.google.ar:core:1.5.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.5.1'
+}
