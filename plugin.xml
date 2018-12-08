@@ -49,5 +49,6 @@
         </config-file>
         <source-file src="src/android/Aronia.java" target-dir="src/org/aronia/plugin" />
         <source-file src="src/android/AroniaActivity.java" target-dir="src/org/aronia/plugin" />
+        <source-file src="src/android/activity_aronia.xml" target-dir="res/layout"/>
     </platform>
 </plugin>
