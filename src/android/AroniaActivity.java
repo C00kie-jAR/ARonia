@@ -1,3 +1,4 @@
+package org.aronia.plugin;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,9 +13,9 @@ public class AroniaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String package_name = getApplication().getPackageName();
-        setContentView(getApplication().getResources().getIdentifier("activity_new", "layout", package_name));
+        setContentView(getApplication().getResources().getIdentifier("activity_aronia", "layout", package_name));
         fragment = (ArFragment)
-                getSupportFragmentManager().findFragmentById(getApplication().getResources().getIdentifier("activity_new", "id", package_name));
+                getSupportFragmentManager().findFragmentById(getApplication().getResources().getIdentifier("activity_aronia", "id", package_name));
 
     }
 }
