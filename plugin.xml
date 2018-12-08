@@ -42,7 +42,7 @@
             <uses-feature android:name="android.hardware.camera.ar" android:required="true" />   
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="org.aronia.plugin.AroniaActivity" android:label="Aronia Activity">
+            <activity android:name="org.aronia.plugin.AroniaActivity" android:label="Aronia Activity" android:theme="@style/Theme.AppCompat.Light">
             </activity>
             <meta-data android:name="com.google.ar.core" android:value="optional" />  
             <meta-data android:name="com.google.ar.sceneform.ux" android:value="optional" />
