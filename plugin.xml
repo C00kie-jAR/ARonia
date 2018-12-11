@@ -19,8 +19,6 @@
         <source-file src="src/ios/Aronia.swift" />
     </platform>
     <platform name="android">
-        <framework src="com.android.tools.build:gradle:3.0.0" />
-        <framework src="com.google.ar.sceneform:plugin:1.6.0" />
         <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Aronia">
