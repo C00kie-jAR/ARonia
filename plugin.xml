@@ -20,6 +20,7 @@
     </platform>
     <platform name="android">
         <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+        <framework src="com.google.ar.sceneform:plugin:1.6.0" />
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Aronia">
                 <param name="android-package" value="org.aronia.plugin.Aronia" />
