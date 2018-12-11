@@ -1,5 +1,17 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    // move it here
+    dependencies {
+        classpath 'com.google.ar.sceneform:plugin:1.6.0'
+    }
+}
+
 android {
     compileSdkVersion 26
     buildToolsVersion '27.0.3'
@@ -15,7 +27,6 @@ android {
 }
 
 dependencies {
-    classpath 'com.google.ar.sceneform:plugin:1.6.0'
     implementation 'com.google.ar:core:1.6.0'
     implementation 'com.google.ar.sceneform:core:1.6.0'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.6.0'
